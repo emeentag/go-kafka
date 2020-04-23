@@ -12,7 +12,8 @@ CURL_OPTS="-Ss --retry 10 "
 JAVA_ARCHIVE=jdk-8u51-linux-x64.gz
 JAVA_MYSQL_CONNECTOR_VERSION=5.1.40
 JAVA_MYSQL_CONNECTOR_JAR=mysql-connector-java-${JAVA_MYSQL_CONNECTOR_VERSION}.jar
-JAVA_MYSQL_CONNECTOR_DOWNLOAD=http://repo1.maven.org/maven2/mysql/mysql-connector-java/${JAVA_MYSQL_CONNECTOR_VERSION}/mysql-connector-java-${JAVA_MYSQL_CONNECTOR_VERSION}.jar
+# 
+JAVA_MYSQL_CONNECTOR_DOWNLOAD=https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/${JAVA_MYSQL_CONNECTOR_VERSION}/mysql-connector-java-${JAVA_MYSQL_CONNECTOR_VERSION}.jar
 
 # hadoop
 HADOOP_PREFIX=/usr/local/hadoop
@@ -68,7 +69,7 @@ SQOOP_RES_DIR=/vagrant/resources/sqoop
 # Tez
 TEZ_RELEASE=apache-tez-${TEZ_VERSION}-bin
 TEZ_ARCHIVE=${TEZ_RELEASE}.tar.gz
-TEZ_MIRROR_DOWNLOAD=http://downloads.apache.org/tez/${TEZ_VERSION}/${TEZ_ARCHIVE}
+TEZ_MIRROR_DOWNLOAD=http://mirror.catn.com/pub/apache/tez/${TEZ_VERSION}/${TEZ_ARCHIVE}
 TEZ_RES_DIR=/vagrant/resources/tez
 
 # Pig
@@ -92,8 +93,6 @@ ZEPPELIN_RES_DIR=/vagrant/resources/zeppelin
 ZEPPELIN_TARGET=/home/ubuntu
 
 # Kafka
-KAFKA_SCALA_VERSION=2.11
-KAFKA_VERSION=2.2.0
 KAFKA_ARCHIVE=kafka_${KAFKA_SCALA_VERSION}-${KAFKA_VERSION}.tgz
 KAFKA_MIRROR_DOWNLOAD=https://archive.apache.org/dist/kafka/${KAFKA_VERSION}/${KAFKA_ARCHIVE}
 KAFKA_RES_DIR=/vagrant/resources/kafka
